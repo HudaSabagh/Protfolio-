@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo 2', sans-serif;
+    font-style: italic;
+    transition: all .2 linear;
+    text-decoration: none;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+a {
+    transition: all .3s ease-in-out;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ :root {
+    --main-font-color: white;
+    --main-color: #ee8022;
+    --sub-color: #595857;
+    --box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    --text-shadow: 1rem 1rem 1rem #595857;
+    ;
+}
+
+html {
+    font-size: 65%;
+    overflow: hidden;
+}
+
+body {
+    padding-left: 36rem;
+    padding-right: 3rem;
+    background: linear-gradient(#f5ab6d, #ee8022);
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.header {
+    width: 30rem;
+    position: fixed;
+    top: 5rem;
+    left: 5rem;
+    border-radius: 1rem;
+    background-color: rgba(250, 250, 250, 0.2);
+    backdrop-filter: blur(.5rem);
+    z-index: 100;
+    padding: 2rem;
+    text-align: center;
+    height: 80%;
+}
+
+.header .profile img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+    margin: 1rem 0;
+}
+
+.nav a {
+    text-transform: none;
+    display: block;
+    margin: 2rem;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.4)
+}
+
+#bars {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    color: var(--sub-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    display: none;
+    border-radius: 1rem;
+    z-index: 1000;
+}
+
+footer {
+    height: 4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--sub-color);
+    border-radius: 0 0 1rem 1rem;
+}
+
+footer .foot {
+    margin: 1rem;
+}
+
+footer .foot ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot ul li {
+    margin-right: 2rem;
+}
+
+.foot ul li a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.foot ul li a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    body {
+        padding: 0;
+    }
+    .header {
+        left: -110%;
+    }
+    .nav a {
+        color: var(--sub-color);
+        font-weight: bold;
+    }
+    .header.toggle {
+        left: 0%;
+        transition: .7s ease-in-out;
+    }
+    #bars {
+        display: initial;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        width: 100%;
+        border-right: 0;
+    }
+}

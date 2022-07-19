@@ -1,0 +1,56 @@
+@import url('main.css');
+.home {
+    height: 80%;
+    background-color: rgba(250, 250, 250, 0.2);
+    backdrop-filter: blur(.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 5rem;
+    border-radius: 1rem;
+}
+
+.home img {
+    width: 22rem;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1rem rgb(255, 255, 255, .2);
+}
+
+.home h4 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1rem 1rem 1rem #595857;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.home .typed {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 1rem 1rem 1rem #595857;
+    text-transform: uppercase;
+}
+
+.social ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1rem;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.social ul li {
+    margin: 0 1rem;
+}
+
+.social ul li .fab {
+    font-size: 3rem;
+    transition: .6s;
+    color: #595857;
+    margin-top: 48rem;
+}

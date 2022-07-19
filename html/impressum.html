@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/impressum.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Impressum </title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="profile">
+            <img src="/img/2.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="education.html"> Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- hier start impressum page -->
+    <section class="impressum">
+        <div class="container">
+            <div class="title">
+                <h1>Impressum</h1>
+            </div>
+            <div class="content">
+                <p>
+                    <span class="achtung">  Huda's Portfolio <br> </span>Liebhartsgasse 55<br> 1160 Wien<br>
+                    <br> info@huda.at
+                    <br> www.huda.com
+                    <br> Tel.: +43 40 - 8 22 44 997<br> Fax: +43 40 - 8 22 44 998<br>
+                    <br>
+                    <span class="achtung">Achtung! </span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi id totam sed nisi hic at iusto ab sequi? Numquam placeat aliquam cum officiis quia expedita cupiditate quaerat nostrum aut optio?
+                </p>
+            </div>
+        </div>
+        <!-- footer start here -->
+        <footer>
+            <div class="foot">
+                <ul>
+                    <li><a href="copyright.html">Data protection</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <div id="bars" class="fas fa-bars"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script>
+        /* bar button display for responsive */
+        $(document).ready(() => {
+            $('#bars').click(function() {
+                $(this).toggleClass('fa-times');
+                $('.header').toggleClass('toggle');
+            });
+        })
+    </script>
+</body>
+
+</html>

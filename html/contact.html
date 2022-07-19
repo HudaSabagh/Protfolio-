@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Contact Page </title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="profile">
+            <img src="/img/2.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="education.html"> Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- hier start impressum page -->
+    <section class="contact">
+        <div class="container">
+            <div class="title">
+                <h1>Contact me</h1>
+                <h2>I'll Glad to answer your questions</h2>
+            </div>
+            <div class="content">
+                <form action="">
+                    <input class="main-input" type="text" name="name" placeholder="your name" required>
+                    <input class="main-input" type="email" name="mail" placeholder="your Email" required>
+                    <textarea class="main-input" name="message" placeholder="your Message" required></textarea>
+                    <input type="submit" value="Send Mesage">
+                </form>
+                <div class="info">
+                    <h4>Get In Touch</h4>
+                    <span class="phone">+43 123 456 789</span>
+                    <span class="phone">+43 123 456 789</span>
+                    <h4>Where We Are</h4>
+                    <address>MincioStrasse 200 <br> 123-2588-45 <br>
+                    Austria, Vienna</address>
+                </div>
+            </div>
+            <!-- social -->
+            <div class="social">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fab fa-facebook"></i>
+                                    </i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer start here -->
+        <footer>
+            <div class="foot">
+                <ul>
+                    <li><a href="copyright.html">Data protection</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <div id="bars" class="fas fa-bars"></div>
+    <script src="/js/jquery.min.js"></script>
+    <script>
+        /* bar button display for responsive */
+        $(document).ready(() => {
+            $('#bars').click(function() {
+                $(this).toggleClass('fa-times');
+                $('.header').toggleClass('toggle');
+            });
+
+        })
+    </script>
+</body>
+
+</html>

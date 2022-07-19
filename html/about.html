@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>About</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="profile">
+            <img src="/img/2.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="education.html"> Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- hier start about page -->
+    <section class="about">
+        <div class="container">
+            <div class="content-section">
+
+                <div class="title">
+                    <h1>About me..</h1>
+                </div>
+                <div class="content">
+                    <div class="img-section">
+                        <img src="/img/christina-wocintechchat-com-0Zx1bDv5BNY-unsplash.jpg" alt="">
+                    </div>
+                    <h3>My Name is Huda Sabagh , I a am Web Developer.... </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat blanditiis ut sed eius repudiandae,Accusantium incidunt dolorum laudantium ea ratione vel eaque numquam, aliquid aspernatur totam expedita fugiat reiciendis omnis accusamus
+                        Quae iste doloribus distinctio illum temporibusducimus voluptate sed perferendis, sequi quod eveniet.</p>
+                    <div class="button">
+                        <a href="contact.html">Contact me</a>
+                    </div>
+                </div>
+                <!-- skills start -->
+                <div class="my-skills" id="my-skills">
+                    <h2 class="main-title">
+                        My Skills
+                    </h2>
+                    <div class="skills">
+                        <div class="skill">
+                            <h3>HTML <span>60%</span></h3>
+                            <div class="the-progress">
+                                <span style="width: 60%;"></span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>CSS<span>50%</span></h3>
+                            <div class="the-progress">
+                                <span style="width: 50%;"></span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>JavaScript <span>40%</span></h3>
+                            <div class="the-progress">
+                                <span style="width: 40%;"></span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <h3>PhotoShop & Ai <span>60%</span></h3>
+                            <div class="the-progress">
+                                <span style="width:60%;"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="foot">
+                <ul>
+                    <li><a href="copyright.html">Data protection</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <div id="bars" class="fas fa-bars"></div>
+
+    <script src="/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#bars').click(function() {
+                $(this).toggleClass('fa-times');
+                $('.header').toggleClass('toggle');
+            });
+        })
+    </script>
+</body>
+
+</html>

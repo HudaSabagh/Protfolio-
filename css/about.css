@@ -1,0 +1,133 @@
+@import url('main.css');
+.about {
+    height: 80%;
+    background-color: rgba(250, 250, 250, 0.2);
+    backdrop-filter: blur(.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: 5rem;
+    border-radius: 1rem;
+}
+
+.container {
+    width: 90%;
+    padding-top: 2rem;
+}
+
+.content-section {
+    float: left;
+    width: 100%;
+    margin-top: -8rem;
+}
+
+.img-section {
+    float: right;
+    width: 30%;
+    margin-left: 2rem;
+    margin-top: 10%;
+}
+
+.img-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.content h3 {
+    margin-top: 1.5rem;
+    color: var(--sub-color);
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.content p {
+    margin-top: .5rem;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: white;
+}
+
+.content .button {
+    margin-top: 2rem;
+}
+
+.content .button a {
+    font-size: 1.3rem;
+    color: white;
+    background-color: var(--main-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.button a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: var(--sub-color);
+}
+
+
+/* skills start */
+
+.my-skills {
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.main-title {
+    font-size: 2rem;
+    color: var(--sub-color);
+}
+
+.skills {
+    flex: 1;
+}
+
+.skills .skill h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--sub-color);
+}
+
+.skills .skill {
+    margin-top: 1rem;
+}
+
+.skills .skill h3 span {
+    font-size: 1rem;
+    border: .1rem solid var(--main-color);
+    padding: .2rem .4rem;
+    border-radius: .5rem;
+    color: var(--sub-color);
+}
+
+.skills .skill .the-progress {
+    height: 2rem;
+    background-color: #777;
+    position: relative;
+    margin-top: .5rem;
+    border-radius: 2rem;
+}
+
+.skills .skill .the-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 2rem 0 0 2rem;
+}
+
+@media (max-width:450px) {
+    .img-section img {
+        display: none;
+    }
+    .my-skills {
+        width: 100%;
+    }
+}
